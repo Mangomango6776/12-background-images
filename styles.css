@@ -1,0 +1,169 @@
+/* ---------- Colors (change them here if you want) ---------- */
+:root {
+    --orange: #F5944A;
+    --blue: #1D93BC;
+    --coral: #E8664A;
+    --cream: #FDF9EE;
+    --mint: #BEE8E3;
+    --text: #333333;
+    --white: #FFFFFF;
+}
+
+/* ---------- Page pattern (fixed + repeating) ---------- */
+body {
+    margin: 0;
+    background-color: var(--mint);
+    background-image: url('pattern.png');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: var(--text);
+}
+
+/* ---------- Site header (orange bar with title and nav) ---------- */
+.site-header {
+    background-color: var(--orange);
+    border-bottom: 5px solid var(--blue);
+    padding: 40px 0;
+}
+
+.site-header-content {
+    width: 825px;
+    margin: 0 auto;
+}
+
+.site-title {
+    margin: 0 0 20px 0;
+    font-family: 'Pacifico', cursive;
+    font-size: 56px;
+    font-weight: 400;
+    color: var(--white);
+}
+
+.nav-list {
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-link {
+    display: block;
+    padding: 8px 18px;
+    border: 1px solid var(--white);
+    border-radius: 30px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--white);
+}
+
+/* ---------- Hero banner (background image) ---------- */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 480px;
+    background-image: url('hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom: 5px solid var(--blue);
+}
+
+.hero-title {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: 20px;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+/* ---------- Main content ---------- */
+.page-content {
+    width: 825px;
+    margin: 0 auto;
+    padding: 50px 0 150px 0;
+}
+
+.lesson {
+    padding: 50px;
+    background-color: var(--cream);
+}
+
+.lesson-title {
+    margin: 0 0 5px 0;
+    font-family: 'Pacifico', cursive;
+    font-size: 48px;
+    font-weight: 400;
+    color: var(--blue);
+}
+
+.lesson-subtitle {
+    margin: 0 0 30px 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #F0D9B5;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--coral);
+}
+
+.lesson p {
+    margin: 0 0 20px 0;
+    line-height: 38px;
+}
+
+/* ---------- Property list (the three code tags at the top) ---------- */
+.property-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0 0 25px 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* ---------- Code tags ---------- */
+code {
+    padding: 3px 8px;
+    border: 1px solid #F5DCC0;
+    border-radius: 4px;
+    background-color: #FEF3E4;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 18px;
+    color: var(--coral);
+}
+
+/* ---------- Links ---------- */
+a {
+    color: var(--blue);
+}
+
+/* ---------- Wrap-up box (blue box with orange edge) ---------- */
+.wrap-up {
+    margin-top: 35px;
+    padding: 40px 50px;
+    border-left: 8px solid var(--orange);
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.wrap-up-title {
+    margin: 0 0 15px 0;
+    font-family: 'Pacifico', cursive;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.wrap-up p {
+    margin: 0;
+    line-height: 38px;
+}
